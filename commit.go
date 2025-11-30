@@ -202,14 +202,15 @@ func generateCommitPage(commit git.Commit, params Params) error {
 		}
 
 		filesViews = append(filesViews, templates.FileView{
-			Path:     path,
-			OldName:  f.OldName,
-			NewName:  f.NewName,
-			IsNew:    f.IsNew,
-			IsDelete: f.IsDelete,
-			IsRename: f.IsRename,
-			IsBinary: f.IsBinary,
-			HTML:     template.HTML(buf.String()),
+			Path:       path,
+			OldName:    f.OldName,
+			NewName:    f.NewName,
+			IsNew:      f.IsNew,
+			IsDelete:   f.IsDelete,
+			IsRename:   f.IsRename,
+			IsBinary:   f.IsBinary,
+			HasChanges: f.TextFragments != nil,
+			HTML:       template.HTML(buf.String()),
 		})
 	}
 

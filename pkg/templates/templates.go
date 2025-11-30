@@ -190,14 +190,15 @@ type FileTree struct {
 // FileView represents a single file section on the commit page with its
 // pre-rendered HTML diff and metadata used by the template.
 type FileView struct {
-	Path     string
-	OldName  string
-	NewName  string
-	IsNew    bool
-	IsDelete bool
-	IsRename bool
-	IsBinary bool
-	HTML     HTML // pre-rendered HTML for diff of this file
+	Path       string
+	OldName    string
+	NewName    string
+	IsNew      bool
+	IsDelete   bool
+	IsRename   bool
+	IsBinary   bool
+	HasChanges bool
+	HTML       HTML // pre-rendered HTML for diff of this file
 }
 
 type PreviewCard struct {
