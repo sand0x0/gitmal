@@ -27,9 +27,11 @@ gitmal --help
 
 ## Screenshots
 
-<p align="center"><img src="img/gitmal-screenshot-code-highlighting.webp" alt="Gitmal Code Highlighting" width="600"></p>
-<p align="center"><img src="img/gitmal-screenshot-file-tree.webp" alt="Gitmal File Tree" width="600"></p>
-<p align="center"><img src="img/gitmal-screenshot-files.webp" alt="Gitmal Files Page" width="600"></p>
+<p align="center">
+  <a href="img/gitmal-screenshot-code-highlighting.webp"><img src="img/gitmal-screenshot-code-highlighting.webp" alt="Gitmal Code Highlighting" width="400"></a>
+  <a href="img/gitmal-screenshot-file-tree.webp"><img src="img/gitmal-screenshot-file-tree.webp" alt="Gitmal File Tree" width="400"></a><br>
+  <a href="img/gitmal-screenshot-files.webp"><img src="img/gitmal-screenshot-files.webp" alt="Gitmal Files Page" width="400"></a>
+</p>
 
 ## Examples
 
