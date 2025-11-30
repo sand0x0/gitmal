@@ -19,6 +19,8 @@ var (
 	flagDefaultBranch string
 	flagTheme         string
 	flagPreviewThemes bool
+	flagMinify        bool
+	flagGzip          bool
 )
 
 type Params struct {
@@ -63,6 +65,8 @@ func main() {
 	flag.StringVar(&flagDefaultBranch, "default-branch", "", "Default branch to use (autodetect master or main)")
 	flag.StringVar(&flagTheme, "theme", "github", "Style theme")
 	flag.BoolVar(&flagPreviewThemes, "preview-themes", false, "Preview available themes")
+	flag.BoolVar(&flagMinify, "minify", false, "Minify all generated HTML files")
+	flag.BoolVar(&flagGzip, "gzip", false, "Compress all generated HTML files")
 	flag.Usage = usage
 	flag.Parse()
 
@@ -225,6 +229,13 @@ func main() {
 		}
 		err = generateIndex(defaultBranchFiles, params)
 		if err != nil {
+			panic(err)
+		}
+	}
+
+	if flagMinify || flagGzip {
+		echo("> post-processing HTML...")
+		if err := postProcessHTML(params.OutputDir, flagMinify, flagGzip); err != nil {
 			panic(err)
 		}
 	}
