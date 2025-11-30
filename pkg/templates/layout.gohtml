@@ -264,7 +264,7 @@
 <div class="menu">
     <a href="{{ .RootHref }}index.html" class="project-name">{{ .Name }}</a>
     <div class="menu-item {{ if eq .Selected "code" }}selected{{ end }}">
-        <a href="{{ .RootHref }}index.html">
+        <a href="{{ .RootHref }}blob/{{ .CurrentRef }}/index.html">
             <svg aria-hidden="true" width="16" height="16">
                 <use xlink:href="#code"></use>
             </svg>
