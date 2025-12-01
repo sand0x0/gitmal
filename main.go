@@ -72,8 +72,11 @@ func main() {
 
 	input := "."
 	args := flag.Args()
-	if len(args) > 0 {
+	if len(args) == 1 {
 		input = args[0]
+	}
+	if len(args) > 1 {
+		panic("Multiple repos not supported yet")
 	}
 
 	if flagPreviewThemes {
