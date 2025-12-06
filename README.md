@@ -56,39 +56,9 @@ Gitmal supports different code highlighting themes. You can customize the theme 
 gitmal --theme github-dark
 ```
 
-## Auto‑updates
+## Documentation
 
-You can automatically regenerate the static files every time you push to a repository by using a `post-receive` hook.
-
-1. **Create a bare repository**
-
-   ```sh
-   git init --bare ~/myrepo.git
-   ```
-
-   Add it as a remote and push:
-
-   ```sh
-   git remote add origin user@server:~/myrepo.git
-   ```
-
-2. **Add the post‑receive hook**
-
-   Create `~/myrepo.git/hooks/post-receive` with the following contents and make it executable:
-
-   ```sh
-   #!/bin/sh
-   
-   NO_OUTPUT_DIR_CHECK=1 /path-to/gitmal --output /var/www/myrepo
-   ```
-
-   And make it executable:
-
-   ```sh
-   chmod +x ~/myrepo.git/hooks/post-receive
-   ```
-
-   Now, every `git push` will trigger a rebuild.
+- [How to Self-Host a Git Repository?](./docs/how-to-self-host-a-git-repository.md)
 
 ## License
 
