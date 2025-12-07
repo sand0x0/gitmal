@@ -136,7 +136,7 @@ func main() {
 	}
 
 	if yes, a, b := hasConflictingBranchNames(branches); yes {
-		echo(fmt.Sprintf("Conflicting branch names: %q and %q", a, b))
+		echo(fmt.Sprintf("Conflicting branchs %q and %q, both want to use %q dir name.", a, b, a.DirName()))
 		os.Exit(1)
 	}
 
