@@ -58,11 +58,10 @@ git push origin master
 
 After pushing, git will run gitmal and generate files under `~/public/repo/` directory.
 
-Now you can access the web view at `http://example.com/repo/` and clone the repository:
+- Private read-write clone URL: `git@example.com:public/repo.git`
+- Public **read-only** clone URL: `http://example.com/repo.git`
+- Gitmal static web view: `http://example.com/repo/`
 
 ```sh
 git clone https://example.com/repo.git
 ```
-
-Now you have a read-only clone url `https://example.com/repo.git` and read-write clone url
-`git@example.com:public/repo.git`.
