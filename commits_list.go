@@ -19,12 +19,12 @@ func generateLogForBranch(allCommits []git.Commit, params Params) error {
 
 	// RootHref from commits/<branch>/... => ../../
 	rootHref := "../../"
-	outBase := filepath.Join(params.OutputDir, "commits", string(params.Ref))
+	outBase := filepath.Join(params.OutputDir, "commits", params.Ref.DirName())
 	if err := os.MkdirAll(outBase, 0o755); err != nil {
 		return err
 	}
 
-	p := progress_bar.NewProgressBar("commits for "+string(params.Ref), totalPages)
+	p := progress_bar.NewProgressBar("commits for "+params.Ref.Ref(), totalPages)
 
 	page := 1
 	for pageCommits := range slices.Chunk(allCommits, commitsPerPage) {

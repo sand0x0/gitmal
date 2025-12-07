@@ -21,10 +21,10 @@ func generateBranches(branches []git.Ref, defaultBranch string, params Params) e
 	entries := make([]templates.BranchEntry, 0, len(branches))
 	for _, b := range branches {
 		entries = append(entries, templates.BranchEntry{
-			Name:        string(b),
-			Href:        filepath.ToSlash(filepath.Join("blob", string(b)) + "/index.html"),
-			IsDefault:   string(b) == defaultBranch,
-			CommitsHref: filepath.ToSlash(filepath.Join("commits", string(b), "index.html")),
+			Name:        b.Ref(),
+			Href:        filepath.ToSlash(filepath.Join("blob", b.DirName()) + "/index.html"),
+			IsDefault:   b.Ref() == defaultBranch,
+			CommitsHref: filepath.ToSlash(filepath.Join("commits", b.DirName(), "index.html")),
 		})
 	}
 

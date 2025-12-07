@@ -230,7 +230,7 @@ func generateCommitPage(commit git.Commit, params Params) error {
 	})
 
 	currentRef := params.DefaultRef
-	if commit.Branch != "" {
+	if !commit.Branch.IsEmpty() {
 		currentRef = commit.Branch
 	}
 

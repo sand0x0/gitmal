@@ -57,7 +57,7 @@ func generateBlobs(files []git.Blob, params Params) error {
 	errCh := make(chan error, 1)
 	var wg sync.WaitGroup
 
-	p := progress_bar.NewProgressBar("blobs for "+string(params.Ref), len(files))
+	p := progress_bar.NewProgressBar("blobs for "+params.Ref.Ref(), len(files))
 
 	workerFn := func() {
 		defer wg.Done()
@@ -98,7 +98,7 @@ func generateBlobs(files []git.Blob, params Params) error {
 						content = string(data)
 					}
 
-					outPath := filepath.Join(params.OutputDir, "blob", string(params.Ref), blob.Path) + ".html"
+					outPath := filepath.Join(params.OutputDir, "blob", params.Ref.DirName(), blob.Path) + ".html"
 					if err := os.MkdirAll(filepath.Dir(outPath), 0o755); check(err) {
 						return
 					}
@@ -127,7 +127,7 @@ func generateBlobs(files []git.Blob, params Params) error {
 							b.String(),
 							blob.Path,
 							rootHref,
-							string(params.Ref),
+							params.Ref.DirName(),
 							dirsSet,
 							filesSet,
 						)
@@ -170,7 +170,7 @@ func generateBlobs(files []git.Blob, params Params) error {
 
 						} else if isImg {
 
-							rawPath := filepath.Join(params.OutputDir, "raw", string(params.Ref), blob.Path)
+							rawPath := filepath.Join(params.OutputDir, "raw", params.Ref.DirName(), blob.Path)
 							if err := os.MkdirAll(filepath.Dir(rawPath), 0o755); check(err) {
 								return
 							}
@@ -187,7 +187,7 @@ func generateBlobs(files []git.Blob, params Params) error {
 								return
 							}
 
-							relativeRawPath := filepath.Join(rootHref, "raw", string(params.Ref), blob.Path)
+							relativeRawPath := filepath.Join(rootHref, "raw", params.Ref.DirName(), blob.Path)
 							contentHTML = template.HTML(fmt.Sprintf(`<img src="%s" alt="%s" />`, relativeRawPath, blob.FileName))
 						}
 
