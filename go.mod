@@ -4,6 +4,7 @@ go 1.24.0
 
 require (
 	github.com/alecthomas/chroma/v2 v2.20.0
+	github.com/spf13/pflag v1.0.10
 	github.com/tdewolff/minify/v2 v2.24.7
 	github.com/yuin/goldmark v1.7.8
 	github.com/yuin/goldmark-highlighting/v2 v2.0.0-20230729083705-37449abec8cc

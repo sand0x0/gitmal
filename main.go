@@ -1,7 +1,6 @@
 package main
 
 import (
-	"flag"
 	"fmt"
 	"os"
 	"path/filepath"
@@ -9,6 +8,8 @@ import (
 	"runtime/pprof"
 
 	"github.com/antonmedv/gitmal/pkg/git"
+
+	flag "github.com/spf13/pflag"
 )
 
 var (
