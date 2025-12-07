@@ -38,7 +38,7 @@ Create a [post‑receive](https://git-scm.com/docs/git-receive-pack#_post_receiv
 
 ```sh
 #!/bin/sh
-NO_OUTPUT_DIR_CHECK=1 /path-to/gitmal --output /home/git/public/repo/
+exec gitmal --output /home/git/public/repo/
 ```
 
 Make the hook executable:
